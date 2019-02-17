@@ -87,6 +87,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
+        var videos = GetComponentsInChildren<UnityEngine.Video.VideoPlayer>();
+
+        foreach (var component in videos)
+            component.Play();
+
         // Enable rendering:
         foreach (var component in rendererComponents)
             component.enabled = true;
@@ -106,6 +111,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+
+        var videos = GetComponentsInChildren<UnityEngine.Video.VideoPlayer>();
+
+        foreach (var component in videos)
+            component.Stop();
 
         // Disable rendering:
         foreach (var component in rendererComponents)

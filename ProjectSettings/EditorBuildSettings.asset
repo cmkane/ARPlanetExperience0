@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: ca97669ffcf7c47919dd1a3552712fd6
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/PlanetTime.unity
-    guid: be3f85dc801ce4a4c847573924517460
+    guid: a84017be189717545a27619107a3951b
   m_configObjects: {}
